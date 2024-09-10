@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="navbar css.css">
+
+    <style>
+        .imgsection {
+            height: 350px;
+            width: 100%;
+            background-color: #331C52;
+            display: flex;
+            font-family: var(--font-family);
+        }
+
+        .imgsection1 {
+            height: 350px;
+            width: 60%;
+        }
+
+        .imgsection2 {
+            height: 350px;
+            width: 40%;
+        }
+
+        .imgsection1head {
+            display: flex;
+            height: 50px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 90px;
+        }
+
+        .imgsection1head>h1 {
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .imgsection1head>svg {
+            padding-top: 15px;
+            padding-left: 10px;
+            animation-name: bounce;
+            animation-iteration-count: infinite;
+            animation-duration: 1.5s;
+        }
+
+        .imgsection1hero {
+            height: 150px;
+            width: 330px;
+            margin-left: 90px;
+        }
+
+        .imgsection1hero>h1 {
+            color: #DCCFED;
+            font-size: 4.2rem;
+            line-height: 0.9;
+            margin-top: 20px;
+        }
+
+        .imgsection1hero1 {
+            height: 40px;
+            width: 330px;
+            position: absolute;
+            top: 270px;
+            margin-left: 90px;
+        }
+
+        .imgsection1hero1>p {
+            color: white;
+            font-size: 1.7rem;
+            margin-top: 5px;
+        }
+
+        .imgsection1hero2 {
+            height: 50px;
+            width: 190px;
+            margin-left: 90px;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .imgsectionround {
+            height: 35px;
+            width: 35px;
+            margin-top: 5px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            justify-content: center;
+            background-color: #DCCFED;
+        }
+
+        .imgsection2img {
+            height: 100%;
+            width: 65%;
+            float: right;
+            background-size: cover;
+        }
+    </style> <!--FIRSTSECTION CSS-->
+
+    <style>
+        .experience {
+            height: 80px;
+            width: 100%;
+            background-color: #291C3A;
+            font-family: var(--font-family);
+            display: flex;
+        }
+
+        .experience1 {
+            height: 80px;
+            width: 25%;
+            display: flex;
+            align-items: center;
+        }
+
+        .experience2 {
+            height: 80px;
+            width: 27%;
+            display: flex;
+            align-items: center;
+        }
+
+        .experience3 {
+            height: 80px;
+            width: 58%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .exp1t1 {
+            color: white;
+            font-size: 3.5rem;
+            margin-left: 90px;
+        }
+
+        .exp1t2 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5px;
+        }
+
+        .exp1t2>p {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .exp2t1 {
+            color: white;
+            font-size: 3.5rem;
+        }
+
+        .exp2t2 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5px;
+        }
+
+        .exp2t2>p {
+            font-size: 1.2rem;
+            color: white;
+        }
+    </style> <!--SECONDSECTION CSS-->
+
+    <style>
+        .about {
+            height: 900px;
+            width: 100%;
+            background-color: #E1EBED;
+            font-family: var(--font-family);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .aboutsec1 {
+            height: 200px;
+            width: 100%;
+        }
+
+        .aboutsect1 {
+            height: 70px;
+            width: 100%;
+        }
+
+        .aboutsect1>h1 {
+            color: #291C3A;
+            margin-top: 0px;
+            font-size: 1.8rem;
+            margin-left: 90px;
+            padding-top: 40px;
+        }
+
+        .aboutsect2 {
+            height: 180px;
+            width: 100%;
+        }
+
+        .aboutsect2>p {
+            font-size: 1.1rem;
+            color: #8121D0;
+            margin-left: 90px;
+            margin-top: 0px;
+            padding-top: 25px;
+        }
+
+        .skillsection {
+            height: 250px;
+            width: 40%;
+            padding-right: 90px;
+            float: right;
+        }
+
+        .aboutsec2t1>h1 {
+            color: #291C3A;
+            margin-top: 0px;
+            font-size: 1.8rem;
+        }
+
+        .aboutsec2t2>p {
+            font-size: 1.1rem;
+            color: #8121D0;
+            margin-top: 0px;
+        }
+
+        .skillicons {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .skillicons1 {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .icon {
+            height: 70px;
+            width: 80px;
+            background-color: #331C52;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .projectsection {
+            height: 350px;
+            width: 100%;
+        }
+
+        .projectt1>h1 {
+            color: #291C3A;
+            margin-top: 0px;
+            font-size: 1.8rem;
+            margin-left: 90px;
+        }
+
+        .projectt2>p {
+            font-size: 1.1rem;
+            color: #8121D0;
+            margin-top: 0px;
+            margin-left: 90px;
+        }
+
+        .projects {
+            height: 250px;
+            width: 93%;
+            margin-left: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .project1 {
+            height: 230px;
+            width: 180px;
+            background-color: #DCCFED;
+            box-shadow: 2px 2px 4px #E1EBED;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .imgpart {
+            height: 120px;
+            margin-top: 5px;
+            width: 170px;
+            border-radius: 5px;
+        }
+
+        .txtpart {
+            height: 100px;
+            width: 170px;
+        }
+
+        .txtpart>h4 {
+            margin-top: 10px;
+            color: #291C3A;
+        }
+
+        .txtpart>p {
+            font-size: 0.8rem;
+            color: #8121D0;
+            margin-top: -12px;
+        }
+
+        .txtpart>button {
+            height: 20px;
+            width: 100%;
+            background-color: #291C3A;
+            color: white;
+            border: none;
+            font-size: 0.7rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style> <!--ABOUTSECTION CSS-->
+
+    <style>
+        .lastsection {
+            height: 400px;
+            width: 100%;
+            background-color: #DCCFED;
+            justify-content: space-between;
+            display: flex;
+            font-family: var(--font-family);
+        }
+
+        .lastsec1 {
+            width: 55%;
+            height: 400px;
+        }
+
+        .lastsec2 {
+            width: 40%;
+            height: 400px;
+        }
+
+        .lastsechead {
+            width: 100%;
+            height: 150px;
+        }
+
+        .lastsechead>h1 {
+            color: #291C3A;
+            margin-left: 90px;
+            padding-top: 30px;
+            font-size: 1.8rem;
+            margin-top: 0px;
+        }
+
+        .lastsecfooter {
+            height: 250px;
+            width: 100%;
+        }
+
+        .footer {
+            height: 150px;
+            width: 100%;
+        }
+
+        .footer>p {
+            font-size: 1.1rem;
+            color: #8121D0;
+            margin-left: 90px;
+            margin-top: 0px;
+            padding-top: 25px;
+        }
+
+        .btns {
+            height: 80px;
+            width: 87%;
+            margin-left: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .btn1 {
+            width: 44%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .btn1>button {
+            background-color: transparent;
+            border: none;
+            height: 25px;
+            color: #291C3A;
+            border-radius: 5px;
+            border: 1px solid #291C3A;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn2 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .btn2>button {
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+            height: 25px;
+            color: #291C3A;
+            border-radius: 5px;
+            border: 1px solid #291C3A;
+            font-weight: bold;
+        }
+
+        .txt {
+            height: 30px;
+            width: 70%;
+            border-radius: 5px;
+            border: 1px solid #291C3A;
+            padding-left: 20px;
+            margin-top: 10%;
+        }
+
+        .email {
+            height: 30px;
+            width: 70%;
+            border-radius: 5px;
+            border: 1px solid #291C3A;
+            padding-left: 20px;
+            margin-top: 3%;
+        }
+
+        .msg {
+            border-radius: 5px;
+            border: 1px solid #291C3A;
+            padding-top: 10px;
+            padding-left: 20px;
+            margin-top: 3%;
+            font-family: var(--font-family);
+        }
+
+        .subtn {
+            height: 30px;
+            width: 75%;
+            color: white;
+            border-radius: 5px;
+            background-color: #291C3A;
+            border: none;
+            padding-left: 20px;
+            margin-top: 3%;
+        }
+
+        .follow {
+            height: 50px;
+            width: 50%;
+            margin-top: 3%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .insta {
+            height: 40px;
+            width: 40px;
+            border: 1px solid #291C3A;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .twitter {
+            height: 40px;
+            width: 40px;
+            border: 1px solid #291C3A;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .github {
+            height: 40px;
+            width: 40px;
+            border: 1px solid #291C3A;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    </style> <!--LASTSECTION CSS-->
+
+    <style>
+        @media (min-width: 0px) and (max-width: 425px) {
+            .navbar {
+                display: none;
+            }
+
+            .imgsection2 {
+                display: none;
+            }
+
+            .imgsection {
+                height: 270px;
+            }
+
+            .imgsection1head {
+                margin-left: 10px;
+            }
+
+            .imgsection1hero {
+                margin-left: 10px;
+            }
+
+            .imgsection1hero>h1 {
+                font-size: 3rem;
+            }
+
+            .imgsection1hero1 {
+                margin-left: 10px;
+                position: absolute;
+                top: 180px;
+            }
+
+            .imgsection1hero1>p {
+                font-size: 1.1rem;
+            }
+
+            .imgsection1hero2 {
+                margin-left: 10px;
+                position: absolute;
+                top: 190px;
+            }
+
+            .experience {
+                height: 240px;
+                width: 409px;
+                flex-wrap: wrap;
+            }
+
+            .exp1t1 {
+                margin-top: 20px;
+                margin-left: 10px;
+                font-size: 3rem;
+            }
+
+            .exp1t2>p {
+                margin-top: -1px;
+                font-size: 1rem;
+            }
+
+            .exp2t1 {
+                font-size: 3rem;
+                margin-top: 20px;
+                margin-left: 60px;
+            }
+
+            .exp2t2>p {
+                margin-top: -1px;
+                font-size: 1rem;
+                width: 200%;
+            }
+
+            .experience3 {
+                height: 150px;
+                width: 300px;
+                position: absolute;
+                top: 340px;
+                flex-wrap: wrap;
+                margin-left: 55px;
+            }
+
+            .about {
+                height: 1320px;
+            }
+
+            .aboutsect1>h1 {
+                margin-left: 10px;
+                margin-top: -30px;
+                font-size: 1.8rem;
+            }
+
+            .aboutsect2>p {
+                font-size: 1rem;
+                margin-left: 20px;
+            }
+
+            .skillsection {
+                height: 250px;
+                width: 40%;
+                margin-top: -10px;
+                float: left;
+            }
+
+            .aboutsec2t1>h1 {
+                margin-left: 10px;
+            }
+
+            .aboutsec2t2>p {
+                margin-left: 20px;
+                width: 350px;
+                font-size: 1rem;
+            }
+
+            .skillicons {
+                width: 400px;
+            }
+
+            .icon {
+                height: 70px;
+                width: 70px;
+            }
+
+            .projectsection {
+                margin-top: 20px;
+            }
+
+            .projectt1>h1 {
+                margin-left: 10px;
+            }
+
+            .projectt2>p {
+                margin-left: 20px;
+                font-size: 1rem;
+            }
+
+            .projects {
+                width: 400px;
+                height: 750px;
+                flex-wrap: wrap;
+                margin-left: 0px;
+                margin-top: -10px;
+            }
+
+            .lastsection {
+                width: 409px;
+                height: 560px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .lastsechead>h1 {
+                margin-top: -5px;
+                width: 170%;
+                margin-left: 10px;
+            }
+
+            .footer>p {
+                width: 100%;
+                margin-left: 10px;
+                margin-top: -50px;
+            }
+
+            .btns {
+                margin-left: 10px;
+            }
+
+            .btn1 {
+                width: 140%;
+            }
+
+            .btn2 {
+                width: 160%;
+            }
+
+            .lastsec2 {
+                width: 100%;
+                margin-top: -130px;
+                height: 500px;
+            }
+
+            .txt {
+                margin-left: 10px;
+            }
+
+            .email {
+                margin-left: 10px;
+            }
+
+            .msg {
+                margin-left: 10px;
+                width: 350px;
+            }
+
+            .subtn {
+                margin-left: 10px;
+            }
+
+            .follow {
+                margin-left: 10px;
+            }
+        }
+    </style> <!--meid query for phone-->
+
+    <style>
+        @media (min-width: 426px) and (max-width: 768px) {
+            .navbarlink {
+                width: 80%;
+            }
+
+            .imgsection1head {
+                margin-left: 10px;
+            }
+
+            .imgsection1hero {
+                margin-left: 10px;
+            }
+
+            .imgsection1hero1 {
+                margin-left: 10px;
+            }
+
+            .imgsection1hero2 {
+                margin-left: 10px;
+            }
+
+            .imgsection2img {
+                width: 100%;
+            }
+
+            .experience{
+                height: 160px;
+            }
+
+            .exp1t1{
+                margin-left: 50px;
+            }
+
+            .exp2t1{
+                margin-top: 180px;
+                margin-left: -135px;
+            }
+
+            .exp2t2>p{
+                margin-top: 160px;
+            }
+
+            .experience3{
+                height: 150px;
+                width: 40%;
+                flex-wrap: wrap;
+            }
+            .about{
+                height: 1070px;
+            }
+            .aboutsect1>h1{
+                margin-left: 10px;
+            }
+
+            .aboutsect2>p{
+                margin-left: 20px;
+            }
+
+            .skillsection{
+                width: 45%;
+            }
+            .aboutsec2t2>p{
+                width: 120%;
+            }
+
+            .icon{
+                height: 70px;
+                width: 70px;
+            }
+            .skillicons{
+                width: 120%;
+            }
+
+            .aboutsec2t1>h1{
+                margin-left: 125px;
+            }
+
+            .projectt1>h1{
+                margin-left: 10px;
+            }
+
+            .projectt2>p{
+                margin-left: 20px;
+            }
+
+            .projects{
+                margin-left: 10px;
+                height: 500px;
+                flex-wrap: wrap;
+            }
+
+            .lastsechead>h1{
+                margin-left: 10px;
+                width: 50%;
+            }
+
+            .footer>p{
+                margin-left: 10px;
+                margin-top: -20px;
+            }
+
+            .btns{
+                margin-left: 10px;
+            }
+
+            .btn1{
+                width: 70%;
+            }
+
+            .btn2{
+                width: 80%;
+            }
+
+            .lastsec2{
+                width: 45%;
+            }
+
+            .msg{
+                width: 300px;
+            }
+
+            .lastsection{
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <ul class="navbarlink">
+                <li>Home</li>
+                <li>About</li>
+                <li>Skills</li>
+                <li>Project</li>
+                <button>Hire me</button>
+            </ul>
+        </div>
+    </nav> <!--NAVBAR CODE-->
+
+    <section class="imgsection">
+        <div class="imgsection1">
+            <div class="imgsection1head">
+                <h1 class="imgsection1t1">Hello</h1>
+                <svg class="animate__animated animate__bounce" xmlns="http://www.w3.org/2000/svg" height="40px"
+                    viewBox="0 -960 960 960" width="40px" fill="#f3be2b">
+                    <path
+                        d="m430-500 283-283q12-12 28-12t28 12q12 12 12 28t-12 28L487-444l-57-56Zm99 99 254-255q12-12 28.5-12t28.5 12q12 12 12 28.5T840-599L586-345l-57-56ZM211-211q-91-91-91-219t91-219l120-120 59 59q7 7 12 14.5t10 15.5l148-149q12-12 28.5-12t28.5 12q12 12 12 28.5T617-772L444-599l-85 84 19 19q46 46 44 110t-49 111l-57-56q23-23 25.5-54.5T321-440l-47-46q-12-12-12-28.5t12-28.5l57-56q12-12 12-28.5T331-656l-64 64q-68 68-68 162.5T267-267q68 68 163 68t163-68l239-240q12-12 28.5-12t28.5 12q12 12 12 28.5T889-450L649-211q-91 91-219 91t-219-91Zm219-219ZM680-39v-81q66 0 113-47t47-113h81q0 100-70.5 170.5T680-39ZM39-680q0-100 70.5-170.5T280-921v81q-66 0-113 47t-47 113H39Z" />
+                </svg>
+            </div>
+
+            <div class="imgsection1hero">
+                <h1>I'm a web <br> Developer</h1>
+            </div>
+
+            <div class="imgsection1hero1">
+                <p>I build things for web</p>
+            </div>
+
+            <div class="imgsection1hero2">
+                <p class="imgsectionround">
+                    <a href="https://twitter.com/?lang=en"><img src="twitter logo.png" height="30px" width="50px"></a>
+                </p>
+                <p class="imgsectionround">
+                    <img src="instagram logo.png" height="40px" width="60px">
+                </p>
+                <p class="imgsectionround">
+                    <img src="linkedin logo.png" height="20px" width="20px">
+                </p>
+                <p class="imgsectionround">
+                    <img src="github logo.png" height="25px" width="25px">
+                </p>
+            </div>
+        </div>
+        <div class="imgsection2">
+            <img src="image.jpg" class="imgsection2img">
+        </div>
+    </section> <!--FIRSTSECTION CODE-->
+
+    <section class="experience">
+        <div class="experience1">
+            <h1 class="exp1t1">1</h1>
+            <span class="exp1t2">
+                <p>YEARS OF <br> EXPERIENCE</p>
+            </span>
+        </div>
+
+        <div class="experience2">
+            <h1 class="exp2t1">5</h1>
+            <span class="exp2t2">
+                <p>PROJECTS COMPLETED <br> AROUND THE WORLD</p>
+            </span>
+        </div>
+
+        <div class="experience3">
+            <img src="html5.png" style="height: 60px;">
+            <img src="css3.png" style="height: 80px;">
+            <img src="jquery.png" style="height: 60px;">
+            <img src="angular JS.png" style="height: 60px;">
+            <img src="react JS.png" style="height: 50px;">
+            <img src="JS.png" style="height: 60px;">
+            <img src="vs code.png" style="height: 50px;">
+            <img src="node JS.png" style="height: 55px;">
+        </div>
+    </section> <!--SECONDSECTION CODE-->
+
+    <section class="about">
+        <div class="aboutsec1">
+            <div class="aboutsect1">
+                <h1>About me</h1>
+            </div>
+
+            <div class="aboutsect2">
+                <p>As a Web Developer, I Am Responsible For <br> Designing And
+                    developing Web Pages. <br> My Primary Focus Is To Create Responsive, <br> User-Friendly Experience
+                    That Meet The Needs <br> Of A Diverse Online Audience.</p>
+            </div>
+        </div>
+
+        <div class="aboutsec2">
+            <div class="skillsection">
+                <div class="aboutsec2t1">
+                    <h1>My Skills</h1>
+                </div>
+
+                <div class="aboutsec2t2">
+                    <p>Technologies I've been working with Recently</p>
+                </div>
+
+                <div class="skillicons">
+                    <div class="skillicons1">
+                        <div class="icon">
+                            <img src="html5.png" height="60px" width="60px">
+                        </div>
+                        <div class="icon">
+                            <img src="css3.png" height="80px" width="80px">
+                        </div>
+                        <div class="icon">
+                            <img src="JS.png" height="55px" width="55px">
+                        </div>
+                        <div class="icon">
+                            <img src="jquery.png" height="60px" width="60px">
+                        </div>
+                        <div class="icon">
+                            <img src="react JS.png" height="55px" width="60px">
+                        </div>
+                    </div>
+                    <div class="skillicons1">
+                        <div class="icon">
+                            <img src="node JS.png" height="60px" width="60px">
+                        </div>
+                        <div class="icon">
+                            <img src="python.png" height="80px" width="80px">
+                        </div>
+                        <div class="icon">
+                            <img src="vs code.png" height="50px" width="50px">
+                        </div>
+                        <div class="icon">
+                            <img src="angular JS.png" height="60px" width="70px">
+                        </div>
+                        <div class="icon">
+                            <img src="c language.png" height="60px" width="55px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectsection">
+            <div class="projectt1">
+                <h1>My Projects</h1>
+            </div>
+
+            <div class="projectt2">
+                <p>Some Things I've built so far</p>
+            </div>
+
+            <div class="projects">
+                <div class="project1">
+                    <div class="imgpart">
+                        <img src="webpage1.jfif" style="height: 120px; width: 170px; border-radius: 5px;">
+                    </div>
+                    <div class="txtpart">
+                        <h4>UI Portfolio Website</h4>
+                        <p>Website landing page for UI<br> Designer portfolio</p>
+                        <button>View Code</button>
+                    </div>
+                </div>
+                <div class="project1">
+                    <div class="imgpart">
+                        <img src="webpage2.jfif" style="height: 120px; width: 170px; border-radius: 5px;">
+                    </div>
+                    <div class="txtpart">
+                        <h4>Ecommerce Website</h4>
+                        <p>Ecommerce website for Banking System</p>
+                        <button>View Code</button>
+                    </div>
+                </div>
+                <div class="project1">
+                    <div class="imgpart">
+                        <img src="webpage3.jfif" style="height: 120px; width: 170px; border-radius: 5px;">
+                    </div>
+                    <div class="txtpart">
+                        <h4>Education Website</h4>
+                        <p>Education website for online study</p>
+                        <button>View Code</button>
+                    </div>
+                </div>
+                <div class="project1">
+                    <div class="imgpart">
+                        <img src="webpage4.png" style="height: 120px; width: 170px; border-radius: 5px;">
+                    </div>
+                    <div class="txtpart">
+                        <h4>Ecommerce Website</h4>
+                        <p>Website for Online shopping site</p>
+                        <button>View Code</button>
+                    </div>
+                </div>
+                <div class="project1">
+                    <div class="imgpart">
+                        <img src="webpage5.png" style="height: 120px; width: 170px; border-radius: 5px;">
+                    </div>
+                    <div class="txtpart">
+                        <h4>Ecommerce Website</h4>
+                        <p>Website for Online food ordering</p>
+                        <button>View Code</button>
+                    </div>
+                </div>
+                <div class="project1">
+                    <div class="imgpart">
+                        <img src="webpage6.jpg" style="height: 120px; width: 170px; border-radius: 5px;">
+                    </div>
+                    <div class="txtpart">
+                        <h4>Ecommerce Website</h4>
+                        <p>Landing Page & Crads Design website</p>
+                        <button>View Code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section> <!--ABOUTSECTION CODE-->
+
+    <section class="lastsection">
+        <div class="lastsec1">
+            <div class="lastsechead">
+                <h1>Let's Discuss <br> on somthing cool together</h1>
+            </div>
+            <div class="lastsecfooter">
+                <div class="footer">
+                    <p>I'm interested in... </p>
+                    <div class="btns">
+                        <div class="btn1"><button>Ecommerce Website</button>
+                            <button>Saas Website</button>
+                        </div>
+
+                        <div class="btn2"><button>Landing page</button>
+                            <button>Portfolio</button>
+                            <button>Blog Website</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lastsec2">
+            <input type="text" placeholder="Your Name" class="txt">
+            <input type="email" placeholder="Your Email" class="email">
+            <textarea rows="5" cols="51" placeholder="Your message" class="msg"></textarea>
+            <button class="subtn">Submit</button>
+
+            <div class="follow">
+                <div class="insta">
+                    <img src="instagram logo.png" height="50px" width="50px">
+                </div>
+
+                <div class="twitter">
+                    <img src="twitter logo.png" height="40px" width="70px">
+                </div>
+
+                <div class="github">
+                    <img src="github logo.png" height="35px" width="35px">
+                </div>
+            </div>
+
+        </div>
+    </section> <!--LASTSECTION CODE-->
+</body>
+
+</html>
